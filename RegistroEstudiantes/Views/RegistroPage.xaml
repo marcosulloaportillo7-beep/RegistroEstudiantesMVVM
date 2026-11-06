@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegistroEstudiantes.Views.RegistroPage"
+             xmlns:viewmodels="clr-namespace:RegistroEstudiantes.ViewModels"
+             x:DataType="viewmodels:RegistroViewModel"
+             xmlns:models="clr-namespace:RegistroEstudiantes.Models"
+             Title="Registro De Estudiantes">
+
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="10">
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="22"
+                Text="Registro de Estudiantes" />
+
+            <Entry
+                Placeholder="Nombre"
+                Text="{Binding Nombre}" />
+
+            <Entry
+                Placeholder="Correo"
+                Text="{Binding Correo}" />
+
+            <Entry
+                Placeholder="Teléfono"
+                Text="{Binding Telefono}" />
+
+            <Entry
+                Placeholder="Carrera"
+                Text="{Binding Carrera}" />
+
+            <DatePicker
+                Date="{Binding Fecha}" />
+
+            <Button
+                Command="{Binding GuardarCommand}"
+                Text="Guardar" />
+
+            <Label
+                FontAttributes="Bold"
+                FontSize="18"
+                Text="Listado de Estudiantes" />
+
+            <CollectionView
+                ItemsSource="{Binding Estudiantes}">
+
+                <CollectionView.ItemTemplate>
+
+                    <DataTemplate
+                        x:DataType="models:Estudiante">
+
+                        <Frame Margin="5">
+
+                            <VerticalStackLayout>
+
+                                <Label
+                                    FontAttributes="Bold"
+                                    Text="{Binding Nombre}"
+                                    TextColor="Black"/>
+
+                                <Label
+                                    Text="{Binding Correo}"
+                                    TextColor="Black"/>
+
+                                <Label
+                                    Text="{Binding Telefono}" 
+                                    TextColor="Black"/>
+
+                                <Label
+                                    Text="{Binding Carrera}" 
+                                    TextColor="Black"/>
+
+                                <Label
+                                    Text="{Binding Fecha}" 
+                                    TextColor="Black"/>
+
+                            </VerticalStackLayout>
+
+                        </Frame>
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
