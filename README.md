@@ -67,3 +67,8 @@ Captura del registro y como se ve, el botón de Guardar no se revela hasta que t
 
 <img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/9223b403-f4d9-49e5-9450-c878c7460cce" />
 
+
+Registro de estudiantes en la lista
+
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/9ae69bb7-2e52-4c0c-8f9e-d14237139a3f" />
+
