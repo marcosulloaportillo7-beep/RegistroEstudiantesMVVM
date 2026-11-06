@@ -59,14 +59,11 @@ Carpeta preparada para servicios de negocio y acceso a datos.
 
 ---
 
-## Diagrama MVVM
+## Capturas
 
-View (RegistroPage)
-        |
-        v
-ViewModel (RegistroViewModel)
-        |
-        v
-Model (Estudiante)
+Captura del registro y como se ve, el botón de Guardar no se revela hasta que todos los campos estén llenos
 
----
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/31413f5f-6221-4bcb-a1e9-6312b0e2e03c" />
+
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/9223b403-f4d9-49e5-9450-c878c7460cce" />
+
